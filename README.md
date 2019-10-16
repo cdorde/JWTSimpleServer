@@ -5,7 +5,7 @@
 
 # JWT Simple Server
 
-A light-weight, dynamic jwt server for ASP.NET Core 2.1
+A light-weight, dynamic jwt server for ASP.NET Core 3.0
 
 ## What is the motivation behind it?
 
