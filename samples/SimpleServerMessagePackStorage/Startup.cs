@@ -24,7 +24,7 @@ namespace SimpleServerMessagePackStorage
             {
                 setup.Path = "MyBinaryStore.bin";
             })
-            .AddMvcCore().
+            .AddMvcCore(options => options.EnableEndpointRouting = false).
             AddAuthorization();
         }
 

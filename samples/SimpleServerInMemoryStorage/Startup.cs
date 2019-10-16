@@ -22,7 +22,7 @@ namespace SimpleServerInMemoryStorage
                 setup.IssuerSigningKey = SigningKey;
             })
             .AddJwtInMemoryRefreshTokenStore()
-            .AddMvcCore().
+            .AddMvcCore(options => options.EnableEndpointRouting = false).
             AddAuthorization();
         }
         
