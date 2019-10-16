@@ -8,9 +8,6 @@
     <Content Remove="wwwroot\simple-server-client.js" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App"/>
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\JWTSimpleServer.MessagePackRefreshTokenStore\JWTSimpleServer.MessagePackRefreshTokenStore.csproj" />
