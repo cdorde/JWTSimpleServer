@@ -46,7 +46,7 @@ namespace FunctionalTests
                         serviceCollection.AddJwtInMemoryRefreshTokenStore();
                     }
 
-                    serviceCollection.AddMvcCore()
+                    serviceCollection.AddMvcCore(options => options.EnableEndpointRouting = false)
                     .AddAuthorization();                    
 
                 }).Configure(app =>

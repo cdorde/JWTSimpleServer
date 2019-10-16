@@ -37,9 +37,11 @@ namespace SimpleServerEFCoreStorage
                             sqlServerOptions => sqlServerOptions.MigrationsAssembly(typeof(Startup).Assembly.FullName));
                     };
                 })
-                .AddMvcCore()
+                .AddMvcCore(options =>
+                   options.EnableEndpointRouting = false
+                )
                 .AddAuthorization()
-                .AddJsonFormatters();
+                .AddNewtonsoftJson();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
